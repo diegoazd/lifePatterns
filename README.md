@@ -1,5 +1,5 @@
 # lifePatterns
-Este es el proeblema:
+Este es el problema:
 
 Imagine an finite two-dimensional orthogonal grid of square cells, each of which is in one of two possible states, alive or dead. Every cell interacts with its eight neighbours, which are the cells that are horizontally, vertically, or diagonally adjacent. At each step in time, the following transitions occur:
 Any live cell with fewer than two live neighbours dies, as if caused by under-population.
