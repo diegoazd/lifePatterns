@@ -105,26 +105,14 @@ public class FindLiveCells {
   }
   
   public char returnCurrentCell(char currentCell, int neighbourCells) {
-    if(currentCell == '*') {
-      return cellPopulationRules(neighbourCells);
-    }else {
-      return reviveCell(neighbourCells); 
-    }
+    return currentCell == '*' ? cellPopulationRules(neighbourCells) : reviveCell(neighbourCells);
   }
 
   private char cellPopulationRules(int neighbourCells) {
-    if (isCandidateForLIve(neighbourCells)) {
-      return '*';
-    }else {
-      return '.';
-    }
+    return isCandidateForLIve(neighbourCells) ? '*' : '.';
   }
 
   private char reviveCell(int neighbourCells) {
-    if (isCandidateForRevive(neighbourCells)) {
-      return '*';
-    }else {
-      return '.';
-    }
+    return isCandidateForRevive(neighbourCells) ? '*' : '.';
   }
 }
